@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+    <title>Inception of React</title>
+</head>
+<body>
+    <h1>Element's before/above root tag's element will not be replaced.</h1>
+    <div id="root">
+        
+        <!-- React will replace this h1 with App.js content -->
+        <!-- It never append in root element object -->
+        <h1>Hello Github</h1>
+    </div>
+
+    <h1>Neither element's below/outside the root tag</h1>
+
+        <!-- <script>
+           const heading = document.createElement("h1");
+            heading.innerHTML = "Hello world";
+
+            const root = document.getElementById("root");
+            root.appendChild(heading);
+        </script> -->
+
+        <script 
+          crossorigin 
+          src="https://unpkg.com/react@18/umd/react.development.js"
+        >
+        </script>
+
+        <script 
+          crossorigin 
+          src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+        >
+        </script>
+
+        <script src="./App.js"></script>
+</body>
+</html>
